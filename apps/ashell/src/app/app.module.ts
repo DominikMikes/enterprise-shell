@@ -17,18 +17,12 @@ import { startsWith } from './router.util';
           loadChildren: () =>
             import('ng-app/Module').then((m) => m.RemoteEntryModule),
         },
-        // {
-        //   path: '',
-        //   outlet: 'enterprise-remote-app1',
-        //   loadChildren: () =>
-        //     import('enterpriseRemoteApp1/Module').then((m) => m.RemoteEntryModule),
-        // },
-        // {
-        //   path: '',
-        //   outlet: 'react',
-        //   component: WrapperComponent,
-        //   data: { importName: 'react-remote', elementName: 'child-react-element'
-        // }},
+        {
+          path: '',
+          outlet: 'react',
+          component: WrapperComponent,
+          data: { importName: 'react-remote', elementName: 'child-react-element'
+        }},
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
