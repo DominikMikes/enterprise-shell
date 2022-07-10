@@ -4,6 +4,8 @@
   "projects": {
     "ashell": "apps/ashell",
     "ashell-e2e": "apps/ashell-e2e",
+    "enterprise-shell": "apps/enterprise-shell",
+    "enterprise-shell-e2e": "apps/enterprise-shell-e2e",
     "ng-app": "apps/ng-app",
     "ng-app-e2e": "apps/ng-app-e2e",
     "react-remote": "apps/react-remote",

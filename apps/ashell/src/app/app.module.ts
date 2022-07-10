@@ -12,17 +12,17 @@ import { startsWith } from './router.util';
     BrowserModule,
     RouterModule.forRoot(
       [
-        // {
-        //   path: '',
-        //   loadChildren: () =>
-        //     import('ng-app/Module').then((m) => m.RemoteEntryModule),
-        // },
         {
           path: '',
-          outlet: 'enterprise-remote-app1',
           loadChildren: () =>
-            import('enterpriseRemoteApp1/Module').then((m) => m.RemoteEntryModule),
+            import('ng-app/Module').then((m) => m.RemoteEntryModule),
         },
+        // {
+        //   path: '',
+        //   outlet: 'enterprise-remote-app1',
+        //   loadChildren: () =>
+        //     import('enterpriseRemoteApp1/Module').then((m) => m.RemoteEntryModule),
+        // },
         // {
         //   path: '',
         //   outlet: 'react',
