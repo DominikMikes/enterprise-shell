@@ -1,0 +1,3 @@
+[submodule "apps/enterprise-remote-app1"]
+	path = apps/enterprise-remote-app1
+	url = https://github.com/DominikMikes/enterprise-remote-app1.git
