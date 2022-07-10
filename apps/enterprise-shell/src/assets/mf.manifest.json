@@ -1,0 +1,4 @@
+{
+  "ng-app": "http://localhost:4001/remoteEntry.mjs",
+	"enterprise-remote-app1": "http://localhost:4101/remoteEntry.js"
+}

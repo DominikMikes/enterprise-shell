@@ -14,18 +14,22 @@ import {loadRemoteModule} from '@angular-architects/module-federation';
         path: '',
         loadChildren: () =>
           loadRemoteModule({
-            // type: 'module',
-            remoteEntry: 'http://localhost:4001/remoteEntry.mjs',
+            type: 'manifest',
             remoteName: 'ng-app',
             exposedModule: './Module'
         })
         .then(m => m.RemoteEntryModule)
       },
-      // {
-      //   path: '',
-      //   loadChildren: () =>
-      //     import('enterpriseRemoteApp1/Module').then((m) => m.RemoteEntryModule),
-      // }
+      {
+        path: '',
+        loadChildren: () =>
+          loadRemoteModule({
+            type: 'manifest',
+            remoteName: 'enterprise-remote-app1',
+            exposedModule: './Module'
+        })
+        .then(m => m.RemoteEntryModule)
+      }
     ],
     { initialNavigation: 'enabledBlocking' }
   )],
